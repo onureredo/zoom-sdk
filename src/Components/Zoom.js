@@ -4,18 +4,16 @@ ZoomMtg.setZoomJSLib('https://source.zoom.us/2.11.0/lib', '/av');
 
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
-// loads language files, also passes any error messages to the ui
 ZoomMtg.i18n.load('en-US');
 ZoomMtg.i18n.reload('en-US');
 
-function Sample() {
-  const authEndpoint =
-    'https://zoom.us/oauth/authorize?response_type=code&client_id=uA8cT_hiQMmqJeQYwcDZ9g&redirect_uri=https%3A%2F%2Fzooom-sdk.netlify.app%2F';
-  const sdkKey = 'uA8cT_hiQMmqJeQYwcDZ9g';
-  const meetingNumber = '85982709098';
-  const passWord = 'Myj3us';
+function Zoom() {
+  const authEndpoint = 'http://localhost:4000';
+  const sdkKey = process.env.REACT_APP_ZOOM_API_KEY;
+  const meetingNumber = process.env.REACT_APP_MEETING_NUMBER;
+  const passWord = process.env.REACT_APP_MEETING_PASSWORD;
   const role = 0;
-  const userName = 'React';
+  const userName = 'Onur';
   const userEmail = '';
   const registrantToken = '';
   const zakToken = '';
@@ -81,4 +79,4 @@ function Sample() {
   );
 }
 
-export default Sample;
+export default Zoom;
