@@ -73,7 +73,7 @@ function Zoom() {
   return (
     <div className='App'>
       <main>
-        <button onClick={getSignature}>Join Meeting</button>
+        <button onClick={getSignature}>Join ZOOM Meeting</button>
       </main>
     </div>
   );
