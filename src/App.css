@@ -1,0 +1,23 @@
+main {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+main button {
+  margin-top: 20px;
+  background-color: #2d8cff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+main button:hover {
+  background-color: #2681f2;
+}

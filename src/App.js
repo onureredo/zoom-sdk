@@ -1,4 +1,5 @@
 import Zoom from './Components/Zoom';
+import './App.css';
 
 function App() {
   return (
